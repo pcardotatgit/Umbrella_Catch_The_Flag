@@ -6,7 +6,7 @@ Some Endpoints had been infected into your organization. As a Security Investiga
 
 And some evidences lead you to a public web site which seems to be the origin of these infections. All Infected users said to you that their troubles began after visiting a Web page on the INTERNET.
 
-So You downloaded this suspicious web page un order to investigate it.
+So You downloaded this suspicious web page in order to investigate it.
 
 To copied it into your laptop and it is called :
 
@@ -21,14 +21,14 @@ Installing these scripts is pretty straight forward . You can just copy / and pa
 
 ### Install a Python virtual environment
 
-	For Linux/Mac 
+For Linux/Mac 
 
 	python3 -m venv venv
 	source bin activate
 
-	For Windows 
+For Windows 
 	
-	We assume that you already have installed git-bash.  If so open a git-bash console and :
+We assume that you already have installed git-bash.  If so open a git-bash console and :
 
 	ptyhon -m venv umbrella_ctf_venv 
 	source /umbrella_ctf_venv/Scripts/activate
@@ -74,7 +74,7 @@ If you have your own Umbrella Investigate License, you don't need to start this 
 
 But this license is not easy to get. We have to pay for this.  And it's a long process to get an evaluation license.
 
-In order to help to to jump on your mission the Umbrella Investigate Simulator is there for this
+In order to help you to jump on your mission, I have coded an Umbrella Investigate Simulator. 
 
 From your python virtual environment go to the **[./umbrella_investigate_simulator]** folder and start the web Server.
 
@@ -126,4 +126,4 @@ Question 5 : In the Security Information, what is the value of the **rip_score**
 
 # 5 - Solutions
 
-Hum ... I think you downloaded them when you git cloned the CTF....
+Hum ... I think you downloaded them when you git cloned this CTF....
