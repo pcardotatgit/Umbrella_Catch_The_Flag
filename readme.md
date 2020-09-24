@@ -86,7 +86,7 @@ You will need an Investigate API Key to be able to send API call to this Web Ser
 
 **Investigate_API_Key = 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef**
 
-**Remark :**This is not a valid Umbrella API key. It doesn't work anywhere else than this CTF.
+**Remark :** This is not a valid Umbrella API key. It doesn't work anywhere else than this CTF.
 
 Run the **test_server.py** script to test it.
 
