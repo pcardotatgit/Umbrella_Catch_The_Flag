@@ -76,7 +76,7 @@ But this license is not easy to get. We have to pay for this.  And it's a long p
 
 In order to help to to jump on your mission the Umbrella Investigate Simulator is there for this
 
-From your python virtual environment go to the **[]./umbrella_investigate_simulator]** folder and start the web Server.
+From your python virtual environment go to the **[./umbrella_investigate_simulator]** folder and start the web Server.
 
     - python app.py
 
@@ -86,7 +86,7 @@ You will need an Investigate API Key to be able to send API call to this Web Ser
 
 **Investigate_API_Key = 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef**
 
-This key doesn't work anywhere else than this CTF
+**Remark :**This is not a valid Umbrella API key. It doesn't work anywhere else than this CTF.
 
 Run the **test_server.py** script to test it.
 
@@ -121,7 +121,7 @@ Question 3 : What are the categories to which beling this malicious domain ?
 
 Question 4 : What is the registrant country of this malicious domain ?
 
-Question 5 : What is the registrant country of this malicious domain ?
+Question 5 : In the Security Information, what is the value of the **rip_score** of this malicious domain ?
 
 
 # 5 - Solutions
