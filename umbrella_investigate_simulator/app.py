@@ -3,6 +3,8 @@ from flask import Flask, flash, redirect, render_template, request, session, abo
 import os
  
 app = Flask(__name__)
+
+Server_Token='Bearer 31801821-b9a1-4ad3-82d9-dfe2c93ff9ef'
  
 @app.route('/')
 def index():
@@ -10,12 +12,15 @@ def index():
     token = headers['Authorization']
     return "Token:\n" + str(token)
 
+@app.route('/test')
+def test():
+    return "Sounds Good ! Token You Must : 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef"
  
 @app.route("/domains/categorization", methods=['GET'])
 def d29():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('29.json')
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'
@@ -26,7 +31,7 @@ def d29():
 def d1():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('1.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'
@@ -35,7 +40,7 @@ def d1():
 def d2():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('2.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}' 
@@ -44,7 +49,7 @@ def d2():
 def d3():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('3.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}' 
@@ -53,7 +58,7 @@ def d3():
 def d4():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('4.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'    
@@ -62,7 +67,7 @@ def d4():
 def d5():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('5.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'  
@@ -71,7 +76,7 @@ def d5():
 def d6():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('6.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}' 
@@ -80,7 +85,7 @@ def d6():
 def d7():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('7.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'  
@@ -89,7 +94,7 @@ def d7():
 def d8():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('8.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}' 
@@ -98,7 +103,7 @@ def d8():
 def d9():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('9.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}' 
@@ -107,7 +112,7 @@ def d9():
 def d10():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('10.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'
@@ -116,7 +121,7 @@ def d10():
 def d11():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('11.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'    
@@ -125,7 +130,7 @@ def d11():
 def d12():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('12.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'     
@@ -134,7 +139,7 @@ def d12():
 def d13():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('13.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'     
@@ -143,7 +148,7 @@ def d13():
 def d14():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('14.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'  
@@ -152,7 +157,7 @@ def d14():
 def d15():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('15.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'   
@@ -161,7 +166,7 @@ def d15():
 def d16():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('16.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'   
@@ -170,7 +175,7 @@ def d16():
 def d17():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('17.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'    
@@ -179,7 +184,7 @@ def d17():
 def d18():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('18.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'  
@@ -188,7 +193,7 @@ def d18():
 def d19():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('19.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'    
@@ -197,7 +202,7 @@ def d19():
 def d20():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('20.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}' 
@@ -206,7 +211,7 @@ def d20():
 def d21():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('21.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'  
@@ -215,7 +220,7 @@ def d21():
 def d22():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('22.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'      
@@ -224,7 +229,7 @@ def d22():
 def d23():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('23.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'    
@@ -233,7 +238,7 @@ def d23():
 def d24():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('24.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'  
@@ -242,7 +247,7 @@ def d24():
 def d25():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('25.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'    
@@ -251,7 +256,7 @@ def d25():
 def d26():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('26.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'
@@ -260,7 +265,7 @@ def d26():
 def d27():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('27.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'     
@@ -269,8 +274,17 @@ def d27():
 def d28():
     headers = request.headers
     token = headers['Authorization']
-    if token=='Bearer 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef':
+    if token==Server_Token:
         return render_template('28.json') 
+    else: 
+        return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'
+
+@app.route("/security/name/www.goloduha.info", methods=['GET'])
+def d31():
+    headers = request.headers
+    token = headers['Authorization']
+    if token==Server_Token:
+        return render_template('31.json') 
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'
 

@@ -8,13 +8,13 @@ And some evidences lead you to a public web site which seems to be the origin of
 
 So You downloaded this suspicious web page in order to investigate it.
 
-To copied it into your laptop and it is called :
+You copied and pasted the page source into your laptop and you called it :
 
 - **page.html**
 
 You are a Cisco Umbrella Customer, and you subscribded to the Investigate Backend. Lucky You !  You will be able to use Investigate APIs to understand what is the Origin of the problem.
 
-## 
+
 ## Installation
 
 Installing these scripts is pretty straight forward . You can just copy / and paste them into you python environment but a good practice is to run them into a python virtual environment.
@@ -84,11 +84,11 @@ The Server listen on port 4000 and you can connect to it at : **http://localhost
 
 You will need an Investigate API Key to be able to send API call to this Web Server 
 
-**Investigate_API_Key = 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef**
+**Investigate_API_Key = 31801821-b9a1-4ad3-82d9-dfe2c93ff9ef**
 
 **Remark :** This is not a valid Umbrella API key. It doesn't work anywhere else than this CTF.
 
-Run the **test_server.py** script to test it.
+Run the **0_test_server.py** script to test it.
 
 ## Start Your Mission
 
@@ -121,7 +121,7 @@ Question 3 : What are the categories to which beling this malicious domain ?
 
 Question 4 : What is the registrant country of this malicious domain ?
 
-Question 5 : In the Security Information, what is the value of the **rip_score** of this malicious domain ?
+Question 5 : In the Security Information, what is the value of the **entropy"** of this malicious domain ?
 
 
 # 5 - Solutions
