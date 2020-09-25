@@ -113,8 +113,7 @@ But if you decide to use the python scripts, then the only thing to know is that
 
 Open them and search for **#TODO  MISSION :**
 
-
-All Umbrella information you need is in the above
+All Umbrella information you need are above. 
 
 And don't hesistate to go to the DCLOUD Umbrella instant demonstration as well, in order to see Umbrella Investigate in action.
 
@@ -122,7 +121,7 @@ It'up to you !!
 
 # 4 - Questions you have to answer to
 
-Question 1 : How many observables ( IP addresses, SHA256, Domains or URL ) the suspicious web page contain ?  
+Question 1 : How many observables ( IP addresses, SHA256, Domains or URL ) the suspicious web page contains ?  
 
 Question 2 : There is one link to a Malicious domain in this page.  What is the name of this malicious domain ? 
 
@@ -135,4 +134,4 @@ Question 5 : In the Security Information, what is the value of the **entropy"** 
 
 # 5 - Solutions
 
-Hum ... I think you downloaded them when you git cloned this CTF....
+Hum ... I think you downloaded some working scripts when you git cloned this CTF....
