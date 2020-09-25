@@ -9,9 +9,10 @@ if __name__ == '__main__':
     print('This script extract every domain name contained into a web page and retrieves all domain\'s security information from Umbrella Investigate BackEnd')
     print()
     print('==================================================================================================================================')
-    print()    
+    print()
+    print('This Script is bugged !!! You have to debug it !!!')       
+    #TODO MISSION : comment useless things and uncomment useful ones
     url=input("enter a HTTP domain a URL to check ( ex www.cars.com ) ( You can type Enter to read a file in disk ): ")
-    # cleanup
     url = url.replace('https://','')
     url = url.replace('HTTPS://','')
     url = url.replace('http://','')
@@ -19,6 +20,8 @@ if __name__ == '__main__':
 
     url='https://' + url
     html=requests.get(url).text
+    
+    #TODO MISSION : comment useless things and uncomment useful ones
     '''
     # Open a file on disk
     with open("page.html", "r") as file:

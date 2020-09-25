@@ -16,7 +16,7 @@ headers = {
 
 def retrieve_categorie(header):
     #TODO  MISSION : set the API path needed  to query for a single domain ( https://docs.umbrella.com/investigate-api/docs )        
-    api_path = "/domains/???????/"
+    api_path = "/domains/???????"
     get_url = f"{base_url}{api_path}"
     # do GET request for the domain status and category
     request_get = requests.get(get_url, headers=headers)

@@ -19,6 +19,13 @@ You are a Cisco Umbrella Customer, and you subscribded to the Investigate Backen
 
 Installing these scripts is pretty straight forward . You can just copy / and paste them into you python environment but a good practice is to run them into a python virtual environment.
 
+If dont have your python environment yet, Cisco DEVNET provide you with very good resources.
+
+Go to for example [ DevNet Express for Cisco DNA v3 ]https://developer.cisco.com/learning/devnet-express/dnav3-track
+
+and then go to the **Developer Workstation and Environment Setup** chapter.  Select your Operating System and go thru the instructions.
+
+
 ### Install a Python virtual environment
 
 For Linux/Mac 
@@ -30,8 +37,10 @@ For Windows
 	
 We assume that you already have installed git-bash.  If so open a git-bash console and :
 
-	ptyhon -m venv umbrella_ctf_venv 
+	python -m venv umbrella_ctf_venv 
 	source /umbrella_ctf_venv/Scripts/activate
+
+**Remark :** you can run the code without having installing a python virtual environment.
 
 ### git clone the scripts
 

@@ -14,7 +14,7 @@ def index():
 
 @app.route('/test')
 def test():
-    return "Sounds Good ! Token You Must : 41801821-b9a1-4ad3-82d9-dfe2c93ff9ef"
+    return "Sounds Good ! Token You Must : 31801821-b9a1-4ad3-82d9-dfe2c93ff9ef"
  
 @app.route("/domains/categorization", methods=['GET'])
 def d29():
