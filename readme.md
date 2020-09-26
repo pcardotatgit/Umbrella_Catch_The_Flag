@@ -17,7 +17,7 @@ You are a Cisco Umbrella Customer, and you subscribded to the Investigate Backen
 
 ## Installation
 
-Installing these scripts is pretty straight forward . You can just copy / and paste them into you python environment but a good practice is to run them into a python virtual environment.
+Installing these scripts is pretty straight forward . You can just copy  and paste them into you python environment but a good practice is to run them into a python virtual environment.
 
 If dont have your python environment yet, Cisco DEVNET provide you with very good resources.
 
@@ -93,7 +93,7 @@ The Server listen on port 4000 and you can connect to it at : **http://localhost
 
 You will need an Investigate API Key to be able to send API call to this Web Server 
 
-**Investigate_API_Key = 31801821-b9a1-4ad3-82d9-dfe2c93ff9ef**
+**FAKE_Investigate_API_Key = 31801821-b9a1-4ad3-82d9-dfe2c93ffake**
 
 **Remark :** This is not a valid Umbrella API key. It doesn't work anywhere else than this CTF.
 

@@ -4,7 +4,7 @@ import os
  
 app = Flask(__name__)
 
-Server_Token='Bearer 31801821-b9a1-4ad3-82d9-dfe2c93ff9ef'
+Server_Token='Bearer 31801821-b9a1-4ad3-82d9-dfe2c93ffake'
  
 @app.route('/')
 def index():
@@ -14,7 +14,7 @@ def index():
 
 @app.route('/test')
 def test():
-    return "Sounds Good ! Token You Must : 31801821-b9a1-4ad3-82d9-dfe2c93ff9ef"
+    return "Sounds Good ! Token You Must : 31801821-b9a1-4ad3-82d9-dfe2c93ffake"
  
 @app.route("/domains/categorization", methods=['GET'])
 def d29():
