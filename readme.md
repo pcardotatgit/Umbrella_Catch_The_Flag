@@ -38,7 +38,7 @@ For Windows
 We assume that you already have installed git-bash.  If so open a git-bash console and :
 
 	python -m venv umbrella_ctf_venv 
-	source /umbrella_ctf_venv/Scripts/activate
+	umbrella_ctf_venv/Scripts/activate
 
 **Remark :** you can run the code without having installing a python virtual environment.
 
