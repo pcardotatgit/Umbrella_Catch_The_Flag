@@ -125,7 +125,7 @@ Question 1 : How many observables ( IP addresses, SHA256, Domains or URL ) the s
 
 Question 2 : There is one link to a Malicious domain in this page.  What is the name of this malicious domain ? 
 
-Question 3 : What are the categories to which beling this malicious domain ?
+Question 3 : What are the categories to which belong this malicious domain ?
 
 Question 4 : What is the registrant country of this malicious domain ?
 
