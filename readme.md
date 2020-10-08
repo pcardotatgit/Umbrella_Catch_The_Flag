@@ -35,7 +35,7 @@ For Linux/Mac
 
 For Windows 
 	
-We assume that you already have installed git-bash.  If so open a git-bash console and :
+We assume that you already have installed git-bash.  If so open a git-bash console and type the 2 following commands :
 
 	python -m venv umbrella_ctf_venv 
 	umbrella_ctf_venv/Scripts/activate
