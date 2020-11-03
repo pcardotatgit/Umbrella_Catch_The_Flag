@@ -129,7 +129,7 @@ Question 3 : What are the categories to which belong this malicious domain ?
 
 Question 4 : What is the registrant country of this malicious domain ?
 
-Question 5 : In the Security Information, what is the value of the **entropy"** of this malicious domain ?
+Question 5 : In the Security Information, what is the value of the **entropy** of this malicious domain ?
 
 
 # 5 - Solutions
