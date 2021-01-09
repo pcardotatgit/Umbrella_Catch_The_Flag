@@ -288,7 +288,15 @@ def d31():
     else: 
         return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'
 
-
+@app.route("/domains/categorization/internetbadguys.com", methods=['GET'])
+def d32():
+    headers = request.headers
+    token = headers['Authorization']
+    if token==Server_Token:
+        return render_template('32.json') 
+    else: 
+        return '{"ERROR": {"error cause":"invalid token :'+token+'"}}'
+        
 @app.errorhandler(404)
 def not_found(error):
     return render_template('error.html'), 404 
