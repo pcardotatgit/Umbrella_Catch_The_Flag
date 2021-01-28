@@ -56,6 +56,7 @@ The scripts need the following python modules
 	
 you can install them with the following  :
 	
+	python -m pip install --upgrade pip
 	pip install -r requirements.txt
 
 ## 2 Learn about Umbrella and Umbrella Investigate APIs
