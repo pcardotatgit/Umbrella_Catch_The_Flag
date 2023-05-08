@@ -19,11 +19,15 @@ You are a Cisco Umbrella Customer, and you subscribded to the Investigate Backen
 
 Installing these scripts is pretty straight forward . You can just copy  and paste them into you python environment but a good practice is to run them into a python virtual environment.
 
-If dont have your python environment yet, Cisco DEVNET provide you with very good resources.
+If dont have your python environment yet, basically you just need a python 3.7 ( or more ) interpreter. For windows users google search for **Python for windows** and install it. Don't forget to click on the **add to path** check box. And that's it.
+
+Cisco DEVNET provide you with very good resources about the tools to install into your latop in order to build your development workstation.
 
 Go to for example to [ Developer Workstation and Environment Setup ](https://developer.cisco.com/learning/tracks/devnet-express-security-v1-1/dev-setup/)
 
 Select your Operating System and go thru the instructions.
+
+All recommended tools in the DEVNET Section is good to install.
 
 ### Step 1 - Create a working directory into your laptop
 
