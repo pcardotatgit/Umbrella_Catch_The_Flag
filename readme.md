@@ -46,27 +46,35 @@ For Windows
 	
 We assume that you already have installed git-bash.  If so open a git-bash console and type the 2 following commands :
 
-	python -m venv umbrella_ctf_venv 
-	umbrella_ctf_venv/Scripts/activate
+	python -m venv venv 
+	venv/Scripts/activate
 
-**Remark :** you can run the code without having installing a python virtual environment.
+**Remark :** you can run the code without having installing a python virtual environment. It will work as far you have all the required python modules
 
 ### Step 3 - clone the scripts into your laptop
+
+**you have a git client** 
 
 If you have a git client you can use the following command :
 
 	git clone https://github.com/pcardotatgit/Umbrella_Catch_The_Flag.git
 	cd umbrella_ctf_venv/
 
-But you can download the zip package by clicking on the **clone** button of the git page. And then unzip the zip file into your working directory. 
+**you DON'T have a git client** 
+
+You can download the zip package by clicking on the **clone** button of the git page. And then unzip the zip file into your working directory. 
 
 ### Step 4 -install needed modules
 
 The scripts need the following python modules
 
+- urllib3==1.26.15
 - requests
+- crayons
+- pyopenssl
 - flask
-	
+- flask_request_params	
+
 You can install them with the following  :
 	
 	python -m pip install --upgrade pip
