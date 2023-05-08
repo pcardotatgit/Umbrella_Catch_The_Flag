@@ -163,9 +163,11 @@ If you prefer to Use POSTMAN instead of the python script ... It's UP to you !
 
 The only thing to know about these python script is that they are all buggued. You have to modify them ot make them work.
 
+So run the python scripts one after the other. See what happens, fix the issues and run them again.
+
 Open them and search for **#TODO  MISSION :** statements into it. They will give you some hints.
 
-All Umbrella information you need are above. 
+All Umbrella information you need are in the Umbrella section above. 
 
 But don't hesistate to go to the DCLOUD Umbrella instant demonstration as well, in order to see Umbrella Investigate in action.
 
