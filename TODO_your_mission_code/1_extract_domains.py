@@ -3,6 +3,7 @@ import json
 import requests
 import re
 from time import sleep
+from crayons import *
 
         
 if __name__ == '__main__':

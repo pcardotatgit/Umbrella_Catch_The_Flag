@@ -1,6 +1,7 @@
 from datetime import datetime
 import json
 import requests
+from crayons import *
 
 #base_url="https://investigate.api.umbrella.com"
 base_url="http://localhost:4000"
@@ -46,13 +47,13 @@ def check_reputation(header,file):
             domain_status = domain_output["status"] #a now we can retreive the status for the domain name
             # walk through different options of status
             if(domain_status == -1):
-                print("SUCCESS: The domain %(domain)s is found MALICIOUS at %(time)s" % {'domain': domain, 'time': time})
+                print(red(f"SUCCESS: The domain {domain} is found MALICIOUS",bold=True))
                 fi.write(domain+'; DANGEROUS ;'+time+';')
             elif(domain_status == 1):
-                print("SUCCESS: The domain %(domain)s is found CLEAN at %(time)s" % {'domain': domain, 'time': time})
+                print(green(f"SUCCESS: The domain {domain} is found CLEAN",bold=True))
                 fi.write(domain+'; CLEAN ;'+time+';')            
             else:
-                print("SUCCESS: The domain %(domain)s is found UNDEFINED / RISKY at %(time)s" % {'domain': domain, 'time': time})
+                print(yellow(f"SUCCESS: The domain {domain} is found UNKNOWN"))
                 fi.write(domain+'; UNKNOWN;'+time+';')
             fi.write('\r\n')
 
