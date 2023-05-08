@@ -1,8 +1,5 @@
-from datetime import datetime
-import json
 import requests
-import re
-from time import sleep
+from crayons import *
 
 if __name__ == '__main__':
     print('This script test the Umbrella Investigate Simulator')
@@ -12,4 +9,4 @@ if __name__ == '__main__':
     # cleanup
     url = "http://localhost:4000/test"
     html=requests.get(url).text
-    print(html)
+    print(green(html,bold=True))

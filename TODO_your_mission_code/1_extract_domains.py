@@ -8,9 +8,11 @@ from time import sleep
 if __name__ == '__main__':
     print('This script extract every domain name contained into a web page and retrieves all domain\'s security information from Umbrella Investigate BackEnd')
     print()
-    print('==================================================================================================================================')
+    print('===================================================================================================================')
     print()
-    print('This Script is bugged !!! You have to debug it !!!')       
+    print(yellow('This Script is bugged !!! You have to debug it !!!',bold=True))     
+    print(yellow('Comment what is useless and uncomment what is needed',bold=True))     
+    print() 
     #TODO MISSION : comment useless things and uncomment useful ones
     url=input("enter a HTTP domain a URL to check ( ex www.cars.com ) ( You can type Enter to read a file in disk ): ")
     url = url.replace('https://','')

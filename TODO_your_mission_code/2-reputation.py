@@ -14,8 +14,6 @@ headers = {
 
 def check_reputation(header,file):
     #TODO  MISSION : set the API path needed  to query for a single domain ( https://docs.umbrella.com/investigate-api/docs )
-    api_path = "/domains/??????/"
-    get_url = f"{base_url}{api_path}"
     # time for AlertTime and EventTime when domains are added to Umbrella
     time = datetime.now().isoformat()
         

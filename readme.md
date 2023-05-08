@@ -35,7 +35,7 @@ Create a working directory into your laptop and open a terminal console into it.
 
 You will put all code into this working directory
 
-### Step 2 - Create a Python virtual environment
+### Step 2 - Create a Python virtual environment and start it
 
 For Linux/Mac 
 
@@ -62,9 +62,9 @@ If you have a git client you can use the following command :
 
 **you DON'T have a git client** 
 
-You can download the zip package by clicking on the **clone** button of the git page. And then unzip the zip file into your working directory. 
+You can download the zip package by clicking on the **clone** button on the top right of this git page. Click on **download.zip**. And then unzip the zip file into your working directory. 
 
-### Step 4 -install needed modules
+### Step 4 -Install needed modules
 
 The scripts need the following python modules
 
@@ -103,24 +103,25 @@ Use Umbrella APIs, goto to :
 
 [Umbrella Investigate API documentation](https://docs.umbrella.com/investigate-api/docs)
 
+We use in this lab the **Investigate APIs**
 
-And try to find the api url which send a **query for a single domain**
+And try to find in the **API Refernce** the api endpoints which gives you back Domain Status.
 
 
 # 3 - Start Your Mission
 
 
-## Run the Umbrella Investigate simulator
+## 1 - Run the Umbrella Investigate simulator
 
-If you have your own Umbrella Investigate License, you don't need to use the simulator. 
+In order to help you to jump on your mission, I have coded an Umbrella Investigate Simulator. It completely emulate the Umbrella Investigate behavior for this CTF. It is recommended to use it.
 
-This license is not easy to get. You have to pay for this.  And it's a long process to get an evaluation license.
+	If you have your own Umbrella Investigate License, you don't need to use the simulator. 
 
-It is recommended to use the simulator because data inside the simulator will never expire and will always be the same. Which might not be the case for the real Umbrella BackEnd if data are too old.
+	This license is not easy to get. You have to pay for this.  And it's a long process to get an evaluation license.
 
-In order to help you to jump on your mission, I have coded an Umbrella Investigate Simulator. 
+	It is recommended to use the simulator because data inside the simulator will never expire and will always be the same. Which might not be the case for the real Umbrella BackEnd if data are too old.
 
-From the python virtual environment you started prior, go to the **[./umbrella_investigate_simulator]** folder and start the web Server.
+From the python virtual environment you started prior, go to the **[./umbrella_investigate_simulator]** subfolder and start the web Server.
 
     - python app.py
 
@@ -132,25 +133,41 @@ You will need an Investigate API Key to be able to send API call to this Web Ser
 
 **Remark :** This is not a valid Umbrella API key. It doesn't work anywhere else than this CTF.
 
-You can run the **0_test_server.py** script to test it.
+## 2 - Start Your Mission
 
-## Start Your Mission
+Open a second CMD terminal into your working directory. 
+
+Start a second python virtual environment.
+
+For Linux/Mac 
+
+	source bin activate
+
+For Windows 
+	
+	venv/Scripts/activate
 
 Go to the **[./TODO_your_mission_code]** folder. And figure out what you can do from there.
 
+You can test the connectivity to the Umbrella Simulator by running the **0_test_server.py** script.
+
+	python 0_test_server.py
+
+If you got an anwser and saw into the simulator console that the http connexion was Okay... then you are ready to go.
+
 Check that the **page.html** file is in this folder. This is the file you have to investigate
 
-Python Scripts are there only for helping you to answser to the questions.
+You are supposed to use the Python Scripts. They are here for helping you to answser to the questions.
 
 If you prefer to Use POSTMAN instead of the python script ... It's UP to you !
 
-But if you decide to use the python scripts, then the only thing to know is that you have to modify these scripts accordingly to what is needed to make them work.
+The only thing to know about these python script is that they are all buggued. You have to modify them ot make them work.
 
-Open them and search for **#TODO  MISSION :**
+Open them and search for **#TODO  MISSION :** statements into it. They will give you some hints.
 
 All Umbrella information you need are above. 
 
-And don't hesistate to go to the DCLOUD Umbrella instant demonstration as well, in order to see Umbrella Investigate in action.
+But don't hesistate to go to the DCLOUD Umbrella instant demonstration as well, in order to see Umbrella Investigate in action.
 
 It'up to you !!
 
