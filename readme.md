@@ -37,30 +37,47 @@ You will put all code into this working directory
 
 ### Step 2 - Create a Python virtual environment and start it
 
-For Linux/Mac 
-
-	python3 -m venv venv
-	source bin activate
-
-For Windows 
-	
-We assume that you already have installed git-bash.  If so open a git-bash console and type the 2 following commands :
+**Create a virtual environment on Windows**
 
 	python -m venv venv 
-	venv/Scripts/activate
+    
 
-**Remark :** you can run the code without having installing a python virtual environment. It will work as far you have all the required python modules
+**Create a virtual environment on Linux or Mac**
+
+	python3 -m venv venv
+
+    Depending on the python version you installed into your Mac you might have to type either 
+
+    - python -m venv venv
+
+    or maybe
+
+    - python3 -m venv venv    : python3 for python version 3.x  
+
+    or maybe 
+
+    - python3.9 -m venv venv  : if you use the 3.9 python version
+
+And then move to the next step : Activate the virtual environment.
+
+**Activate the virtual environment on Windows**
+
+	venv\Scripts\activate
+    
+**Activate the virtual environment on Linux or Mac**
+
+	source venv/bin/activate    
 
 ### Step 3 - clone the scripts into your laptop
 
-**you have a git client** 
+**> If you have a git client** 
 
 If you have a git client you can use the following command :
 
 	git clone https://github.com/pcardotatgit/Umbrella_Catch_The_Flag.git
 	cd umbrella_ctf_venv/
 
-**you DON'T have a git client** 
+**> Or if you DON'T have a git client** 
 
 You can download the zip package by clicking on the **clone** button on the top right of this git page. Click on **download.zip**. And then unzip the zip file into your working directory. 
 
@@ -75,9 +92,9 @@ The scripts need the following python modules
 - flask
 - flask_request_params	
 
-You can install them with the following  :
+You can install them with the following  ( Windows / Mac / Linux ) :
 	
-	python -m pip install --upgrade pip
+	python -m pip install --upgrade pip  ( this command is only needed if your python version is old and if the secod command fails )
 	pip install -r requirements.txt
 
 Or you can install required modules separatly :
