@@ -41,7 +41,6 @@ You will put all code into this working directory
 
 	python -m venv venv 
     
-
 **Create a virtual environment on Linux or Mac**
 
 	python3 -m venv venv
